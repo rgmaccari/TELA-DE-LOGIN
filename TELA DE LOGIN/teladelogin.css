@@ -1,0 +1,44 @@
+/* { } */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, green, cyan); /* altera a cor de fundo... */
+    /*  linear gradient = degrade... to right = direção do degrade */
+}
+div{
+    background-color: rgba(0, 0, 0, 0.6);
+    /* red - green - blue - alpha */
+    /* quanto maior o alfa, mais transparente */
+    /* configuraçãozinha padrão pra uma cor transparente */
+    position: absolute;
+    /* position absolute faz com que a div englobe apenas os elementos que estão dentro dela */
+    top: 50%; 
+    left: 50%;
+    /* com esses dois comandos, posicionamos a div no centro da tela */
+    /* porém, o que se alinha ao centro é a vertice superior esquerda */
+    transform: translate(-50%, -50%);
+    /* voltar "-"... 50% no eixo x e menos 50% no eixo y ----(-x, -y) */
+    padding: 60px; /* padding muda o tamanho das paradas */
+    /*padding = é a distancia entre os elementos e a borda da div  */
+    border-radius: 20px;
+    /* border-radius faz arredondar as bordas da div */
+    /* mais pixels = mais arredondada */
+    color: white; /* muda a cor do texto apenas */
+}
+input{
+    padding: 10px;
+    outline: none; /* quando voce clica na caixa, cria-se uma linha externa a ela --- no caso, eu tirei */
+    font-size: 15px; /* tamanho da fonte dentro da caixa */
+}
+button{
+    background-color: cornflowerblue;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer; /* quando passa o mouse por cima, ele ativa a mãozinha */
+}
+button:hover{ /* quando passar o mouse por cima, o button muda de cor */
+    background-color: darkcyan;
+}
